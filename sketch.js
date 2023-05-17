@@ -15,7 +15,7 @@ function setup() {
   for (let i = 0; i < 6; i++) {
     let x = random(width); // Random horizontal position
     let y = random(-200, -100); // Random starting position above the canvas
-    let velocity = random(1, 3); // Random falling velocity
+    let velocity = random(0.5, 2); // Random falling velocity
     
     // Create an object with image, position, velocity, and bounce flag
     let object = {
@@ -40,7 +40,7 @@ function draw() {
     object.y += object.velocity;
     
     // Check if the object has reached the bottom
-    if (object.y >= height - 500) {
+    if (object.y >= height - 100) {
       // If not bouncing, reverse its velocity and set bouncing flag
       if (!object.isBouncing) {
         object.velocity *= -1;
@@ -54,7 +54,7 @@ function draw() {
     }
     
     // Draw the object image at its current position with half width and auto height
-    let imageSize = width / 2;
+    let imageSize = width / 4;
     let imageHeight = object.image.height * (imageSize / object.image.width);
     image(object.image, object.x, object.y, imageSize, imageHeight);
   }
