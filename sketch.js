@@ -14,7 +14,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   
   for (let i = 0; i < 6; i++) {
-    let x = random(width); // Random horizontal position
+    let x = random(100, width-100); // Random horizontal position
     let y = random(-1000, -100); // Random starting position above the canvas
     let velocity = random(1, 3); // Random falling velocity
     
@@ -50,7 +50,7 @@ function draw() {
     }
     
     // Check if the object has reached 50% of the window height
-    if (object.isBouncing && object.y >= 0.5 * height) {
+    if (object.isBouncing && object.y >= 0.9 * height) {
       // Reduce bounce gradually until it comes to a stop
       object.velocity *= bounceReduction;
       if (abs(object.velocity) < 0.1) {
@@ -64,7 +64,7 @@ function draw() {
     }
     
     // Draw the object image at its current position with half width and auto height
-    let imageSize = width / 4;
+    let imageSize = width / 5;
     let imageHeight = object.image.height * (imageSize / object.image.width);
     image(object.image, object.x, object.y, imageSize, imageHeight);
   }
