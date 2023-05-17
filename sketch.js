@@ -41,7 +41,7 @@ function draw() {
     }
     
     // Draw the object image at its current position with half width and auto height
-    let imageSize = width / 2;
+    let imageSize = width / 5;
     let imageHeight = object.image.height * (imageSize / object.image.width);
     image(object.image, object.x, object.y, imageSize, imageHeight);
   }
