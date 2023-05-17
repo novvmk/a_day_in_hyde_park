@@ -1,71 +1,68 @@
-let objectImages = [];
-let objects = [];
+let images = [];
+let numImages = 6;
+let yPos = [];
+let speed = [];
 let gravity = 0.5;
-let bounceReduction = 0.95;
+let bounceFactor = 0.8;
+let targetYPos = [];
+let state = [];
 
 function preload() {
-  for (let i = 1; i <= 6; i++) {
-    let imageName = "images/object" + i + ".png";
-    objectImages.push(loadImage(imageName));
+  for (let i = 1; i <= numImages; i++) {
+    images.push(loadImage(`images/object${i}.png`));
   }
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
-  for (let i = 0; i < 6; i++) {
-    let x = random(width); // Random horizontal position
-    let y = random(-1000, -100); // Random starting position above the canvas
-    let size = width / 2; // Image size based on half width of the canvas
-    let speed = 0; // Initial speed
-    
-    // Create an object with image, position, speed, and bounce properties
-    let object = new Ball(x, y, size, speed);
-    object.image = objectImages[i];
-    
-    objects.push(object);
+  for (let i = 0; i < numImages; i++) {
+    yPos[i] = random(-height, -500);
+    speed[i] = random(3, 6);
+    targetYPos[i] = random(height * 0.2, height * 0.8);
+    state[i] = 0;
   }
 }
 
 function draw() {
   background(220);
   
-  for (let i = 0; i < objects.length; i++) {
-    let object = objects[i];
+  for (let i = 0; i < numImages; i++) {
+    let img = images[i];
+    let imgWidth = width / 2;
+    let imgHeight = img.height * (imgWidth / img.width);
     
-    object.update();
-    
-    // Check if the object has reached 90% of the window height
-    if (object.y >= 0.9 * height) {
-      object.speed *= -bounceReduction;
+    if (state[i] === 0) {
+      // Object falling
+      yPos[i] += speed[i];
+      
+      if (yPos[i] >= targetYPos[i]) {
+        yPos[i] = targetYPos[i];
+        speed[i] *= -bounceFactor;
+        state[i] = 1;
+      }
+    } else if (state[i] === 1) {
+      // Object bouncing
+      speed[i] += gravity;
+      yPos[i] += speed[i];
+      
+      if (yPos[i] >= height - 500) {
+        yPos[i] = height - 500;
+        speed[i] = 0;
+        state[i] = 2;
+      }
+    } else if (state[i] === 2) {
+      // Object stopped
+      yPos[i] = lerp(yPos[i], -500, 0.05);
+      
+      if (yPos[i] <= -500) {
+        yPos[i] = -500;
+        state[i] = 0;
+        targetYPos[i] = random(height * 0.2, height * 0.8);
+      }
     }
     
-    // Draw the object image at its current position with half width and auto height
-    let imageSize = width / 5;
-    let imageHeight = object.image.height * (imageSize / object.image.width);
-    image(object.image, object.x, object.y, imageSize, imageHeight);
+    image(img, width / 5 - imgWidth / 5, yPos[i], imgWidth, imgHeight);
   }
-}
-
-function Ball(tempX, tempY, tempW, tempSpeed) {
-  this.x = tempX;  // x location of square 
-  this.y = tempY;  // y location of square 
-  this.w = tempW;  // size
-  this.speed = tempSpeed;  // speed
-
-  this.update = function() {
-    // Add speed to location
-    this.y = this.y + this.speed; 
-
-    // Add gravity to speed
-    this.speed = this.speed + gravity; 
-
-    // If square reaches the bottom 
-    // Reverse speed 
-    if (this.y > height) { 
-      this.speed = this.speed * -bounceReduction;  
-    } 
-  };
 }
 
 function windowResized() {
