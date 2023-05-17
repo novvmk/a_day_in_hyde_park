@@ -28,7 +28,7 @@ function draw() {
   
   for (let i = 0; i < numImages; i++) {
     let img = images[i];
-    let imgWidth = width / 2;
+    let imgWidth = width / 5;
     let imgHeight = img.height * (imgWidth / img.width);
     
     if (state[i] === 0) {
@@ -61,7 +61,7 @@ function draw() {
       }
     }
     
-    image(img, width / 5 - imgWidth / 5, yPos[i], imgWidth, imgHeight);
+    image(img, width / 2 - imgWidth / 2, yPos[i], imgWidth, imgHeight);
   }
 }
 
