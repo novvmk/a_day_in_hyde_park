@@ -1,22 +1,28 @@
 $(document).ready(function() {
 
-	$('body').on('touchstart', function() {
-		
-	});
+    // var pageTitle = $(".header_tit").attr("title");
+    // console.log( pageTitle );
+	// $(window).scroll(function() {
 
-    // $('.list_item').on('touchstart touchend', function(e) {
-    //     e.preventDefault();
-    //     $(this).toggleClass('list_ani');
-    // });
+    //     if ($(document).scrollTop() > $(window).height() /1.5 ) {
+    //         console.log( $(document).scrollTop() );
+    //     } else {
+          
+    //     }
+    //   });
 
-    //$(".scroll").click(function (){
-    //    var toLink = $(this).attr('alt');
-    //    var linkTop = $('#' + toLink).offset().top - $('#' + toLink).height()/2.71;
-    //    console.log(linkTop);
-    //    $('html, body').animate({
-    //       scrollTop: linkTop
-    //    }, 2000);
-    //});
+
+    var link = $("a.link");
+    var link_class = $("span.link_txt").index();
+
+    $(link).click( function(){
+        var link_name = $(this).attr('alt');
+        console.log(link_name);
+        $('#' + link_name).slideToggle();
+    });
+
+
+
 
 });
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAnne" class="container page">
+
+      <header id="header">
+        <h3 class="contents_text1 layout">experimental litrature</h3>
+        <h3 class="header_title">story o1</h3>
+      </header>
+
+      <div id="containerPage">
+
+        <img class="page_img a" src="images/img_page1_1.png" width="600" height="auto" onmouseenter="playAudio()" />
+        <img class="page_img b" src="images/img_page1_2.png" width="572" height="auto" onmouseenter="playAudio()" />
+
+        <div id="pageP">
+          <p>Today is Friday.<br><br><br>&emsp;&emsp;&emsp;&emsp;Looking out of the window, <a href="#" class="link" alt="linkTxt1">the weather</a> does not seem particularly pleasant.<p id="linkTxt1" class="d_n">The sky is white, as if filled with white smoke, without a single cloud. Actually, it is more like white with about 5% grey mixed in. </p><br><br><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Usually, I enjoy going to the park on sunny days when the sun is shining brightly, but going on a cloudy day isn't too bad either. There are many parks in London, but today I decided to go to Hyde Park. <br><br><br>I wore a white T-shirt with dark grey jeans.<br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; I also brought my film camera and <a href="#" class="link" alt="linkTxt2">my favourite green cap</a> with me. <p id="linkTxt2" class="d_n"><img src="images/img_cap.jpg" width="300" height="auto"/></p> At the <a href="#" class="link" alt="linkTxt3">bus stop</a>, two people were waiting, it seems like the bus had not passed by yet. <p id="linkTxt3" class="d_n">&emsp;&emsp;&emsp; I think the alphabet signs at the top of the bus stops are a really good system to prevent confusion about directions. Before coming to London, I used to occasionally take buses in the opposite direction. It would be great if we had this system in our country too. </p> <br><br><br><br><br><br><br><br>&emsp;&emsp;&emsp;&emsp; I took the number 94 bus. Most buses in London have two floors, and I always sit by the window on the second floor. <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Because, <br><br>&emsp;&emsp;&emsp;&emsp; I <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; love<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; the street view <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;from the second floor. <br><br><br>From there,<br>&emsp;&emsp;&emsp;I can see the top front view of tall trees,&emsp; <br>not the low angle. <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; I like this cropped view by window, fully filled with the branches and leaves. It creates &emsp;&emsp;&emsp; a beautiful, <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;lively pattern<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; against the blue sky. <br><br><br><br>&emsp;&emsp;&emsp; While gazing the view outside,<br><br><br>I got off<br>&emsp;&emsp;&emsp;at Queensway Station <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Stop A) bus stop.</p>
+        </div>
+
+
+
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="layout">hypertext fiction</h3>
+        <button type="button" id="soundBtn" onclick="soundOn()">sound off</button>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound off") {
+          b.innerHTML = "sound on";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound off";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+
