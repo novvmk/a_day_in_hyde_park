@@ -1,26 +1,22 @@
 $(document).ready(function() {
 
-    // var pageTitle = $(".header_tit").attr("title");
-    // console.log( pageTitle );
-	// $(window).scroll(function() {
-
-    //     if ($(document).scrollTop() > $(window).height() /1.5 ) {
-    //         console.log( $(document).scrollTop() );
-    //     } else {
-          
-    //     }
-    //   });
-
 
     var link = $("a.link");
-    var link_class = $("span.link_txt").index();
 
-    $(link).click( function(){
+    $(link).click( function(e){
         var link_name = $(this).attr('alt');
-        console.log(link_name);
         $('#' + link_name).slideToggle();
+        e.preventDefault();
     });
 
+    var next = $("a#pageNext");
+
+    $(next).click( function(e){
+        var next_name = $(this).attr('alt');
+        $('#' + next_name).slideToggle();
+        console.log(next_name);
+        e.preventDefault();
+    });
 
 
 

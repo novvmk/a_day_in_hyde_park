@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAnne" class="container page">
+
+      <header id="header">
+        <h3 class="contents_text1 layout">A story of Anne</h3>
+        <h3 class="header_title">story o7</h3>
+      </header>
+
+      <div id="containerPage">
+
+        <img class="page_img a" src="images/img_page1_1.png" width="600" height="auto" onmouseenter="playAudio()" />
+        <img class="page_img b" src="images/img_page1_2.png" width="572" height="auto" onmouseenter="playAudio()" />
+
+        <div id="pageP">
+          <div>
+            In the &emsp;&emsp;&emsp;&emsp; lush green<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;landscape,<br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I discovered<br><br>four trees adorned<br>&emsp;&emsp;&emsp;&emsp;with vivid pink petals.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#" Id="pageNext" alt="pageNextP1">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP1" class="d_n">
+            <br><br><br><br>The large deep pink flowers are visible <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;even from a distance.<br><br><br><br><br>&emsp;&emsp;&emsp;&emsp;Beneath the trees, there is a bench surrounded by a heap of petals,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;creating a mystical atmosphere.<br><br><br>&emsp;&emsp;It feels<br>&emsp;&emsp;&emsp;&emsp;as though<br>&emsp;&emsp;&emsp;&emsp;this area is<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;from <a href="#" class="link" alt="linkTxt1">another world.</a>&emsp;&emsp;<a href="#" Id="pageNext" alt="pageNextP2">&nbsp; next &nabla;</a><p id="linkTxt1" class="d_n"><br><img src="images/hyde_park_12.jpg" width="320" height="auto" style="margin-left:12rem" /></p>
+          </div>
+          <div id="pageNextP2" class="d_n">
+            <br><br><br>&emsp;&emsp;&emsp;&emsp;The petals fluttered down,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;down,<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;down,<br><br><br><br> accompanied by<br>&emsp;&emsp;&emsp;&emsp;the sound of birds singing.<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Time seems to pass slowly<br>&emsp;&emsp;in this serene moment.<br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Passersby pause to take pictures of this beautiful landscape, and I also seized photos of the trees and petals.
+          </div>
+        </div>
+
+          <a href="#" class="link" alt="linkTxt1"></a>
+          <p id="linkTxt3" class="d_n"></p>
+
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="layout"><a href="page_anne.html">back to the table of contents</a></h3>
+        <button type="button" id="soundBtn" onclick="soundOn()">sound off</button>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound off") {
+          b.innerHTML = "sound on";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound off";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+
