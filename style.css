@@ -323,7 +323,7 @@ canvas {
 	opacity: 0;
 	animation: ani_op 2s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
 	transition: transform 1s;
-	display: none;
+/*	display: none;*/
 }
 
 .page_img:hover, .page_img:focus {
@@ -362,9 +362,9 @@ footer {
 	left: 0; 
 	bottom: 0; 
 	width: 100%;
-	height: 18vh;
+	height: 10vh;
 	background: url('images/bg_footer.png') no-repeat center top;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 #containerMain footer, #containerContents footer {
