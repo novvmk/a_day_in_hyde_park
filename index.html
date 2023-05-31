@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body style="background: #000;">
+
+    <audio id="audio" preload="auto" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerIndex" class="main_container">
+
+      <header id="header">
+        <h3 class="hf_layout hf_style">A day in Hyde Park</h3>
+      </header>
+
+      <div id="containerPage">
+
+        <h2 id="contentsText">A day in Hyde Park</h2>
+        
+        <div class="container_img">
+          <div class="fade img2"><img src="images/paper_main2.png" alt=""></div>
+          <div class="fade img3"><a href="page_ron.html" onmouseenter="playAudio()"><img src="images/paper_main3.png" alt=""></a></div>
+          <div class="fade img4"><img src="images/paper_main4.png" alt=""></div>
+          <div class="fade img5"><a href="page_about.html" onmouseenter="playAudio()"><img src="images/paper_main5.png" alt=""></a></div>
+          <div class="fade img6"><a href="page_paul.html" onmouseenter="playAudio()"><img src="images/paper_main6.png" alt=""></a></div>
+          <div class="fade img7"><a href="page_rosie.html" onmouseenter="playAudio()"><img src="images/paper_main7.png" alt=""></a></div>
+          <div class="fade img8"><img src="images/paper_main8.png" alt=""></div>
+          <div class="fade img9 flip">
+            <a href="page_anne.html" onmouseenter="playAudio()">
+              <img class="first" src="images/paper_main9.png" alt="">
+              <img class="last" src="images/paper_main9_flip.png" alt="">
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="hf_layout hf_style">Experimental literature - Hyperlink Fiction</h3>
+        <h3 class="hf_style"><a href="#" id="soundBtn" onclick="soundOn()">sound is off now</a></h3>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play();
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound is off now") {
+          b.innerHTML = "sound is on now";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound is off now";
+          audio.muted = true;
+        }
+      }
+    </script>
+
+  </body>
+  
+</html>
+

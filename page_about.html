@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" preload="auto" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAbout" class="main_container story page">
+
+      <header id="header">
+        <h3 class="hf_layout hf_style">About the project</h3>
+        <h3 class="header_title">A day in Hyde Park</h3>
+      </header>
+
+      <div id="containerPage">
+    
+        <div>
+          The project was initiated by questioning how digital technologies shape human perception. Marshall McLuhan (2005) argues that media, as an extension of human faculty, alters our senses and consequently transforms our perceptions and behaviours. The sustained use of digital devices has resulted in changes in how humans read and perceive information. Immediate and abundant data through websites and social media platforms have transformed human reading habits, prompting individuals to selectively accept seemingly important information and skip the rest to obtain target information quickly. Consequently, skimming and scanning have become a dominant method of information consumption. However, Maryanne Wolf (2018) warns that these skim reading habits may endanger ‘deep reading’, which is a reading approach that facilitates reasoning, critical analysis, and empathy.<br><br>
+          On the contrary, ‘Ways of Reading: A Day in Hyde Park’ challenges the negative perception of skimming information. Colomina and Wigley (2016, p. 35) suggested that humans gradually redesign themselves to effectively utilise new technologies, drawing from how human hands adapt to human-made tools. In the same vein, the emerging generation, born in an entirely digitally transformed era, may have different abilities and perceptions regarding printed and digital books, as they do not differentiate between analogue and digital media. The study examines the adequacy of existing book formats for the new generation, who primarily engage in skim reading, and how to offer them ‘deep reading’ experiences.<br><br>
+          In their modified reading habits, exposure to extensive and fragmented information may potentially enhance concentration. In alignment with this perspective, the project introduces a form of ‘hyperlink fiction’ where the narrative unfolds through hyperlinks containing fragmented content. This fiction portrays multiple characters in Hyde Park, inviting readers to infer Anne's favourite item and engaging them in an immersive experience. This format diverges from traditional printed books and PDF e-books. The investigation aims to deliver deep-reading experiences through the creation of experimental literature.<br><br><br>
+          <a href="#" class="answer link" alt="linkTxt1">click to see an answer</a>
+          <p id="linkTxt1" class="d_n">Anne brought<br>her favourite greep cap<img src="images/img_cap.jpg" alt="" /></p>
+          <br><br>
+        </div>
+
+
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="hf_layout hf_style"><a href="index.html">back to stories</a></h3>
+        <h3 class="hf_style"><a href="#" id="soundBtn" onclick="soundOn()">sound is off now</a></h3>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound is off now") {
+          b.innerHTML = "sound is on now";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound is off now";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+

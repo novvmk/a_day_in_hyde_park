@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" preload="auto" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAnne" class="main_container story page">
+
+      <header id="header">
+        <h3 class="hf_layout hf_style">A day in Hyde Park</h3>
+        <h3 class="header_title">A story of Ron</h3>
+      </header>
+
+      <div id="containerPage">
+        <div id="hScroll">
+          <div class="story01" onmouseenter="playAudio()"><img src="images/story_anne01.png" alt=""></div>
+          <div class="story02" onmouseenter="playAudio()"><a href="page_anne1.html"><img src="images/story_anne02.png" alt=""></a></div>
+          <div class="story03" onmouseenter="playAudio()"><a href="page_anne3.html"><img src="images/story_anne03.png" alt=""></a></div>
+          <div class="story04" onmouseenter="playAudio()"><a href="page_anne7.html"><img src="images/story_anne04.png" alt=""></a></div>
+          <div class="story05" onmouseenter="playAudio()"><img src="images/story_anne05.png" alt=""></div>
+          <div class="story06" onmouseenter="playAudio()"><a href="page_anne4.html"><img src="images/story_anne06.png" alt=""></a></div>
+          <div class="story07" onmouseenter="playAudio()"><img src="images/story_anne07.png" alt=""></div>
+          <div class="story08" onmouseenter="playAudio()"><img src="images/story_anne08.png" alt=""></div>
+          <div class="story09" onmouseenter="playAudio()"><a href="page_anne2.html"><img src="images/story_anne09.png" alt=""></a></div>
+          <div class="story10" onmouseenter="playAudio()"><a href="page_anne8.html"><img src="images/story_anne10.png" alt=""></a></div>
+          <div class="story11" onmouseenter="playAudio()"><a href="page_anne6.html"><img src="images/story_anne11.png" alt=""></a></div>
+          <div class="story12" onmouseenter="playAudio()"><a href="page_anne5.html"><img src="images/story_anne12.png" alt=""></a></div>
+        </div>
+        <div id="vScroll">
+      </div>
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="hf_layout hf_style"><a href="index.html">back to stories</a></h3>
+        <h3 class="hf_style"><a href="#" id="soundBtn" onclick="soundOn()">sound is off now</a></h3>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound is off now") {
+          b.innerHTML = "sound is on now";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound is off now";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+
