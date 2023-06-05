@@ -10,20 +10,19 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(255);
 
   for(let shape of shapes) {
     push();
-    fill(shape.color)
     shape.y += 1;
     if(shape.shapeType === 'sqaure') {
-      image(daisy, shape.x, shape.y, 100, 100);
+      image(daisy, shape.x, shape.y, 180, 180);
     }
     if(shape.shapeType === 'ellipse') {
-      ellipse(shape.x, shape.y, 150, 50);
+      image(daisy, shape.x, shape.y, 110, 110);
     }
     if(shape.shapeType === 'arc') {
-      arc(shape.x, shape.y, 100, 100, 0, PI + QUARTER_PI);
+      image(daisy, shape.x, shape.y, 90, 90);
     }
     pop();
   }
@@ -43,7 +42,6 @@ function addAShape() {
   shape1 = {
     x: mouseX,
     y: mouseY,
-    color: random(['red','yellow', 'orange', 'green', 'blue', 'purple']),
     shapeType: random(['sqaure', 'ellipse', 'arc'])
   }
   shapes.push(shape1);
