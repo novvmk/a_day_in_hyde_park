@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" preload="auto" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAnne" class="main_container page">
+
+      <header id="header">
+        <h3 class="hf_layout hf_style">A day in Hyde Park</h3>
+        <h3 class="header_title">story o1</h3>
+      </header>
+
+      <div id="containerPage">
+
+        <div id="pageP">
+          <div>
+            &emsp;&emsp;It seems like spring has arrived.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;The green grass is lush,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;and white flowers are blooming<br>&emsp;&emsp;&emsp;<a href="#" class="link" alt="linkTxt1">here</a>&emsp;&emsp;&emsp;and there.<p id="linkTxt1" class="d_n" style="color: #fbe40b;">Click here and there to bloom flowers</p><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" Id="pageNext" alt="pageNextP1">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP1" class="d_n">
+            <br><br><br>I particularly love daisies.<br>&emsp;&emsp;I gathered<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;with my friends<br>&emsp;&emsp;&emsp;&emsp;to admire&emsp;&emsp;&emsp;the daisies.
+            <a href="#" Id="pageNext" alt="pageNextP2">&nbsp; next &nabla;</a> 
+          </div>
+          <div id="pageNextP2" class="d_n">
+            <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Behind the daisy garden,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;there was a pond<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;where many swans had <a href="#" class="link" alt="linkTxt2">gathered.</a><p id="linkTxt2" class="d_n"><br><img src="images/hyde_park_05.jpg" width="340" height="auto" style="margin-left:10rem;" /><br><br></p><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I wonder<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if they too are enjoying<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;the arrival of&emsp;&emsp;&emsp;spring? 
+          </div>
+        </div>
+
+
+
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="hf_layout hf_style"><a href="page_paul.html">back to Paul's story</a></h3>
+        <h3 class="hf_style"><a href="#" id="soundBtn" onclick="soundOn()">sound is off now</a></h3>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound is off now") {
+          b.innerHTML = "sound is on now";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound is off now";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+

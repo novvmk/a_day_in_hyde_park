@@ -395,88 +395,20 @@ canvas {
 	transition: transform 1.5s;
 }
 
+#hScroll > div:hover {
+	z-index: 30;
+}
+
 #hScroll > div.onscroll1 {
-	transform: translateX(-2vw);
+	transform: translateX(-8vw);
 }
 
 #hScroll > div.onscroll2 {
-	transform: translateX(-9vw);
-}
-
-#hScroll > div.onscroll3 {
 	transform: translateX(-5vw);
 }
 
-#hScroll > div.story01 {
-	width: 39.15rem;
-	top: 0;
-	left: -7vh;
-}
-
-#hScroll > div.story02 {
-	width: 21.6rem;
-	top: 27vh;
-	left: 6vw;
-}
-
-#hScroll > div.story03 {
-	width: 22.8375rem;
-	top: 5vh;
-	left: 35vw;
-}
-
-#hScroll > div.story04 {
-	width: 18.225rem;
-	top: 24vh;
-	left: 55vw;
-}
-
-#hScroll > div.story05 {
-	width: 34.0875rem;
-	top: 19vh;
-	left: 69vw;
-}
-
-#hScroll > div.story06 {
-	width: 26.55rem;
-	top: 0vh;
-	left: 85vw;
-}
-
-#hScroll > div.story07 {
-	width: 24.6375rem;
-	top: 3vh;
-	left: 114vw;
-}
-
-#hScroll > div.story08 {
-	width: 29.025rem;
-	top: 32vh;
-	left: 117vw;
-}
-
-#hScroll > div.story09 {
-	width: 37.9125rem;
-	top: 5vh;
-	left: 147vw;
-}
-
-#hScroll > div.story10 {
-	width: 23rem;
-	top: 34vh;
-	left: 162vw;
-}
-
-#hScroll > div.story11 {
-	width: 29.8125rem;
-	top: 5vh;
-	left: 180vw;
-}
-
-#hScroll > div.story12 {
-	width: 28.6875rem;
-	top: 9vh;
-	left: 209vw;
+#hScroll > div.onscroll3 {
+	transform: translateX(-2vw);
 }
 
 #hScroll > div img {
@@ -492,24 +424,313 @@ canvas {
 #hScroll > div > a:hover {
 	transform: rotate3D(6, 10, 4, 30deg);
 }
-    
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-3vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 
 #vScroll {
   height: 3400px;
 }
 
-/* ---------- page:Anne ----------	*/
+
+/* ---------- Anne's story ----------	*/
+
+#containerAnne #hScroll > div.story01 {
+	width: 39.15rem;
+	top: 0;
+	left: -5.2vw;
+}
+
+#containerAnne #hScroll > div.story02 {
+	width: 21.6rem;
+	top: 27vh;
+	left: 6vw;
+}
+
+#containerAnne #hScroll > div.story03 {
+	width: 22.8375rem;
+	top: 5vh;
+	left: 35vw;
+}
+
+#containerAnne #hScroll > div.story04 {
+	width: 18.225rem;
+	top: 24vh;
+	left: 58vw;
+}
+
+#containerAnne #hScroll > div.story05 {
+	width: 34.0875rem;
+	top: 19vh;
+	left: 74vw;
+}
+
+#containerAnne #hScroll > div.story06 {
+	width: 26.55rem;
+	top: 0vh;
+	left: 87vw;
+}
+
+#containerAnne #hScroll > div.story07 {
+	width: 24.6375rem;
+	top: 3vh;
+	left: 120vw;
+}
+
+#containerAnne #hScroll > div.story08 {
+	width: 29.025rem;
+	top: 32vh;
+	left: 125vw;
+}
+
+#containerAnne #hScroll > div.story09 {
+	width: 37.9125rem;
+	top: 5vh;
+	left: 155vw;
+}
+
+#containerAnne #hScroll > div.story10 {
+	width: 23rem;
+	top: 34vh;
+	left: 170vw;
+}
+
+#containerAnne #hScroll > div.story11 {
+	width: 29.8125rem;
+	top: 5vh;
+	left: 190vw;
+}
+
+#containerAnne #hScroll > div.story12 {
+	width: 28.6875rem;
+	top: 9vh;
+	left: 218vw;
+}
+
+/* ---------- Rosie's story ----------	*/
+
+#containerRosie #hScroll > div.story01 {
+	width: 26.4375rem;
+	top: 24vh;
+	left: -3vw;
+	z-index: 20;
+}
+
+#containerRosie #hScroll > div.story02 {
+	width: 23.5125rem;
+	top: 2vh;
+	left: 12vw;
+}
+
+#containerRosie #hScroll > div.story03 {
+	width: 28.6875rem;
+	top: 11vh;
+	left: 40vw;
+}
+
+#containerRosie #hScroll > div.story04 {
+	width: 31.1625rem;
+	top: 26vh;
+	left: 62vw;
+}
+
+#containerRosie #hScroll > div.story05 {
+	width: 29.5875rem;
+	top: 1vh;
+	left: 76vw;
+}
+
+#containerRosie #hScroll > div.story06 {
+	width: 21.825rem;
+	top: 26vh;
+	left: 103vw;
+}
+
+#containerRosie #hScroll > div.story07 {
+	width: 30.2625rem;
+	top: 6vh;
+	left: 122vw;
+}
+
+#containerRosie #hScroll > div.story08 {
+	width: 30.4875rem;
+	top: 19vh;
+	left: 150vw;
+}
+
+#containerRosie #hScroll > div.story09 {
+	width: 27.45rem;
+	top: 8.5vh;
+	left: 164vw;
+}
+
+#containerRosie #hScroll > div.story10 {
+	width: 20.475rem;
+	top: 20vh;
+	left: 192vw;
+}
+
+#containerRosie #hScroll > div.story11 {
+	width: 28.8rem;
+	top: 4vh;
+	left: 211vw;
+	z-index: 20;
+}
+
+#containerRosie #hScroll > div.story12 {
+	width: 26rem;
+	top: 12vh;
+	left: 223vw;
+}
+
+/* ---------- Ron's story ----------	*/
+
+#containerRon #hScroll > div.story01 {
+	width: 21.825rem;
+	top: 2vh;
+	left: -2.8vw;
+}
+
+#containerRon #hScroll > div.story02 {
+	width: 39.375rem;
+	top: 30vh;
+	left: 7vw;
+}
+
+#containerRon #hScroll > div.story03 {
+	width: 30.2625rem;
+	top: 2vh;
+	left: 39vw;
+}
+
+#containerRon #hScroll > div.story04 {
+	width: 29.5875rem;
+	top: 18vh;
+	left: 56vw;
+}
+
+#containerRon #hScroll > div.story05 {
+	width: 23.9625rem;
+	top: 2.5vh;
+	left: 88vw;
+}
+
+#containerRon #hScroll > div.story06 {
+	width: 26.6625rem;
+	top: 30vh;
+	left: 103vw;
+}
+
+#containerRon #hScroll > div.story07 {
+	width: 28.6875rem;
+	top: 20vh;
+	left: 123vw;
+}
+
+#containerRon #hScroll > div.story08 {
+	width: 26.6625rem;
+	top: 0;
+	left: 138vw;
+}
+
+#containerRon #hScroll > div.story09 {
+	width: 38rem;
+	top: 24vh;
+	left: 153.5vw;
+	z-index: 20;
+}
+
+#containerRon #hScroll > div.story10 {
+	width: 25.9875rem;
+	top: 7vh;
+	left: 180vw;
+}
+
+#containerRon #hScroll > div.story11 {
+	width: 21.7125rem;
+	top: 0vh;
+	left: 205vw;
+}
+
+#containerRon #hScroll > div.story12 {
+	width: 35.8875rem;
+	top: 26vh;
+	left: 218vw;
+}
+
+
+/* ---------- Paul's story ----------	*/
+
+#containerPaul #hScroll > div.story01 {
+	width: 37rem;
+	top: 5vh;
+	left: -7vw;
+}
+
+#containerPaul #hScroll > div.story02 {
+	width: 29rem;
+	top: 37vh;
+	left: 18vw;
+}
+
+#containerPaul #hScroll > div.story03 {
+	width: 26.4375rem;
+	top: 9vh;
+	left: 40vw;
+}
+
+#containerPaul #hScroll > div.story04 {
+	width: 30.6rem;
+	top: -4vh;
+	left: 76vw;
+}
+
+#containerPaul #hScroll > div.story05 {
+	width: 27.3375rem;
+	top: 11vh;
+	left: 85vw;
+}
+
+#containerPaul #hScroll > div.story06 {
+	width: 28.6875rem;
+	top: 1vh;
+	left: 102vw;
+}
+
+#containerPaul #hScroll > div.story07 {
+	width: 32rem;
+	top: 27vh;
+	left: 123vw;
+}
+
+#containerPaul #hScroll > div.story08 {
+	width: 35.55rem;
+	top: -2vh;
+	left: 154vw;
+}
+
+#containerPaul #hScroll > div.story09 {
+	width: 27.5625rem;
+	top: 5vh;
+	left: 172vw;
+}
+
+#containerPaul #hScroll > div.story10 {
+	width: 34.0875rem;
+	top: 33vh;
+	left: 168vw;
+}
+
+#containerPaul #hScroll > div.story11 {
+	width: 30.7125rem;
+	top: 27vh;
+	left: 203vw;
+}
+
+#containerPaul #hScroll > div.story12 {
+	width: 29.475rem;
+	top: 5vh;
+	left: 222vw;
+}
+
+/* ---------- pages ----------	*/
 
 #pageP {
 	width: 25.5rem;
@@ -578,7 +799,6 @@ canvas {
 #pageP > div > span:nth-child(2) {
 	animation-delay: 0.5s;
 }
-
 
 #pageP > div > span:before {
 	display: block;

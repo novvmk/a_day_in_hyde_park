@@ -31,7 +31,6 @@ $(document).ready(function() {
             $("#hScroll > div:nth-child(3n+2)").addClass("onscroll2");
             $("#hScroll > div:nth-child(3n+3)").addClass("onscroll3");
         } else {
-            scrollDirection = 'up';
             /* backward */
             $("#hScroll > div:nth-child(3n+1)").removeClass("onscroll1");
             $("#hScroll > div:nth-child(3n+2)").removeClass("onscroll2");

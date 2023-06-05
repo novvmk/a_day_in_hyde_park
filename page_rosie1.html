@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" preload="auto" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAnne" class="main_container page">
+
+      <header id="header">
+        <h3 class="hf_layout hf_style">A day in Hyde Park</h3>
+        <h3 class="header_title">story o1</h3>
+      </header>
+
+      <div id="containerPage">
+
+        <div id="pageP">
+          <div>
+            The weather is cloudy today,<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;so<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;there aren't many people around.<br><br>My friends and I gathered<br>&emsp;&emsp;by the lakeside to enjoy this tranquillity.
+            <a href="#" Id="pageNext" alt="pageNextP1">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP1" class="d_n">
+            <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As we were gathering,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;suddenly more people started<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;to gather as well.<br><br>Many people were taking pictures.<br><br>&emsp;&emsp;One person was wearing<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a white shirt, grey jeans,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;and carrying <a href="#" class="link" alt="linkTxt1">a red bag.</a><p id="linkTxt1" class="d_n"><img src="images/img_bag.jpg" width="340" height="auto" style="margin-left:10rem;" /></p><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;The red bag stood out.<br>She took several photos of us<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;with <a href="#" class="link" alt="linkTxt2">a pink digital camera.</a>&nbsp;<a href="#" Id="pageNext" alt="pageNextP2">&nbsp; next &nabla;</a><p id="linkTxt2" class="d_n"><img src="images/img_camera_pink.jpg" width="260" height="auto" /></p>
+          </div>
+          <div id="pageNextP2" class="d_n"> 
+            <br><br><br>Next to her was someone<br>&emsp;&emsp;holding <a href="#" class="link" alt="linkTxt3">a black camera</a> and taking pictures.<br><p id="linkTxt3" class="d_n"><img src="images/img_camera_black.jpg" width="200" height="auto" /></p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;She was also wearing<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a white shirt and grey jeans<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;but with <a href="#" class="link" alt="linkTxt4">a green cap.</a><p id="linkTxt4" class="d_n"><img src="images/img_cap.jpg" width="280" height="auto" style="margin-left:11rem;" /></p><br>&emsp;&emsp;She took photos<br>&emsp;&emsp;&emsp;&emsp;and then walked in a different direction.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" Id="pageNext" alt="pageNextP3">&nbsp; next &nabla;</a> 
+          </div>
+          <div id="pageNextP3" class="d_n"> 
+            <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Another person was wearing<br>a white shirt and <a href="#" class="link" alt="linkTxt5">white sunglasses,</a><p id="linkTxt5" class="d_n"><img src="images/img_sunglasses.jpg" width="240" height="auto" style="margin-left:11rem;" /></p><br>&emsp;&emsp;&emsp;&emsp;while carrying <a href="#" class="link" alt="linkTxt6">a silver coloured camera.</a><p id="linkTxt6" class="d_n"><img src="images/img_camera_silver.jpg" width="250" height="auto" style="margin-left:11rem;" /></p><br>&emsp;&emsp;It is a good colour match.
+            <a href="#" Id="pageNext" alt="pageNextP4">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP4" class="d_n">
+            <br><br><br>The other person was wearing<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a black shirt and pink trousers.<br>&emsp;&emsp;Pink looks really pretty.<br>I like pink,<br>&emsp;&emsp;and I also wanted to have pink feathers,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;but I had white feathers.<br><br><br>Anyway, It's fun to watch people.<br>
+          </div>
+        </div>
+
+
+
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="hf_layout hf_style"><a href="page_rosie.html">back to Rosie's story</a></h3>
+        <h3 class="hf_style"><a href="#" id="soundBtn" onclick="soundOn()">sound is off now</a></h3>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound is off now") {
+          b.innerHTML = "sound is on now";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound is off now";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+

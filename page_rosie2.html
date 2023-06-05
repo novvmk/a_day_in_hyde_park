@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A day in Hyde Park</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="audio" preload="auto" muted>
+      <source src="audio/audio_paper.ogg" type="audio/ogg">
+      <source src="audio/audio_paper.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="containerAnne" class="main_container page">
+
+      <header id="header">
+        <h3 class="hf_layout hf_style">A day in Hyde Park</h3>
+        <h3 class="header_title">story o2</h3>
+      </header>
+
+      <div id="containerPage">
+
+        <div id="pageP">
+          <div>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I gathered with my friends<br>and then <a href="#" class="link" alt="linkTxt1">separated</a><p id="linkTxt1" class="d_n"><br><img src="images/hyde_park_03.jpg" width="260" height="auto" style="margin-left: -4rem;" /></p><br><br>&emsp;&emsp;&emsp;&emsp;to find a quiet place.
+            <a href="#" Id="pageNext" alt="pageNextP1">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP1" class="d_n">
+            <br><br><br>&emsp;&emsp;In the distance,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I could see people taking a stroll.<br>&emsp;&emsp;&emsp;&emsp;There were also white flowers scattered<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;on the grass nearby,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;and pigeons had gathered atop them.<br>&emsp;&emsp;I strolled along the edge of the pond,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;admiring the surroundings.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" Id="pageNext" alt="pageNextP2">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP2" class="d_n">
+            <br><br><br>I liked watching people above the water,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;but I also enjoyed seeing<br>&emsp;&emsp;what lay beneath the water.<br>&emsp;&emsp;&emsp;&emsp;There were many things under the water.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" Id="pageNext" alt="pageNextP3">&nbsp; next &nabla;</a>
+          </div>
+          <div id="pageNextP3" class="d_n">
+            <br><br><br>As I was <a href="#" class="link" alt="linkTxt2">engrossed in</a><p id="linkTxt2" class="d_n"><br><img src="images/hyde_park_04.jpg" width="260" height="auto" style="margin-left: 8rem;" /></p><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;observing underwater,<br>&emsp;&emsp;I was taken aback<br>when a duck suddenly flew down from the sky.<br><br>I was so startled<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;startled<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;startled<br>&emsp;&emsp;that I hadn't noticed it<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;because I was focused on<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;watching beneath the water.
+          </div>
+        </div>
+
+      </div> <!-- containerPage -->
+
+      <footer>
+        <h3 class="hf_layout hf_style"><a href="page_rosie.html">back to Rosie's story</a></h3>
+        <h3 class="hf_style"><a href="#" id="soundBtn" onclick="soundOn()">sound is off now</a></h3>
+      </footer>
+      
+    </div> <!-- containerMain -->
+
+    <script>
+      var x = document.getElementById("audio");
+      var b = document.getElementById("soundBtn");
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function soundOn() {
+        audio.muted = false;
+
+        if (b.innerHTML === "sound is off now") {
+          b.innerHTML = "sound is on now";
+          audio.muted = false;
+        } else {
+          b.innerHTML = "sound is off now";
+          audio.muted = true;
+        }
+      }
+    </script>
+    
+  </body>
+  
+</html>
+
