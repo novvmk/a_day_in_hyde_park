@@ -17,6 +17,14 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    var sketch = $("a.sketch");
+
+    $(sketch).click( function(e){
+        var canvas = $("canvas");
+        $(canvas).toggle();
+        e.preventDefault();
+    });
+
     var lastScrollTop = 0;
 
     $(window).on('scroll', function() {
