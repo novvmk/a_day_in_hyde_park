@@ -105,6 +105,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 }
 
 ::selection {
@@ -113,8 +114,10 @@ canvas {
 }
 
 .main_container {
+	position: relative;
 	width: 100%;
 	text-align: center;
+	z-index: 100;
 }
 
 /* ---------- header ----------	*/
@@ -510,7 +513,7 @@ canvas {
 	width: 26.4375rem;
 	top: 24vh;
 	left: -3vw;
-	z-index: 20;
+	z-index: 30;
 }
 
 #containerRosie #hScroll > div.story02 {
@@ -571,7 +574,7 @@ canvas {
 	width: 28.8rem;
 	top: 4vh;
 	left: 211vw;
-	z-index: 20;
+	z-index: 30;
 }
 
 #containerRosie #hScroll > div.story12 {
@@ -634,7 +637,7 @@ canvas {
 	width: 38rem;
 	top: 24vh;
 	left: 153.5vw;
-	z-index: 20;
+	z-index: 30;
 }
 
 #containerRon #hScroll > div.story10 {
