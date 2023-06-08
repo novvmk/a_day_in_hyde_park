@@ -4,32 +4,32 @@
     font-family: 'font_title';
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/pvct.woff) format("woff"),
-         url(fonts/pvct.otf) format("otf");
+    src: url('fonts/pvct.woff') format("woff"),
+         url('fonts/pvct.otf') format("otf");
 }
 
 @font-face {
     font-family: 'font_title_i';
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/pvct_i.woff) format("woff"),
-         url(fonts/pvct_i.otf) format("otf");
+    src: url('fonts/pvct_i.woff') format("woff"),
+         url('fonts/pvct_i.otf') format("otf");
 }
 
 @font-face {
     font-family: 'font_body';
     font-style: normal;
     font-weight: 400; 
-    src: url(fonts/si_book.woff2) format("woff2"), 
-         url(fonts/si_book.woff) format("woff");
+    src: url('fonts/si_book.woff2') format("woff2"), 
+         url('fonts/si_book.woff') format("woff");
 }
 
 @font-face {
     font-family: 'font_body';
     font-style: normal;
     font-weight: 200; 
-    src: url(fonts/si_r.woff2) format("woff2"), 
-         url(fonts/si_r.woff) format("woff");
+    src: url('fonts/si_r.woff2') format("woff2"), 
+         url('fonts/si_r.woff') format("woff");
 }
 
 html {
@@ -172,7 +172,7 @@ canvas {
 }
 
 .hf_style a:hover {
-	color: #aaa;
+	color: #ccc;
 }
 
 #containerIndex .hf_style {
@@ -395,7 +395,7 @@ canvas {
 	position: absolute;
 	width: 25rem;
 	transform: translateX(0);
-	transition: transform 1.5s;
+	transition: transform 1s;
 }
 
 #hScroll > div:hover {
@@ -403,7 +403,7 @@ canvas {
 }
 
 #hScroll > div.onscroll1 {
-	transform: translateX(-8.64rem);
+	transform: translateX(-8.64rem);	
 }
 
 #hScroll > div.onscroll2 {
@@ -417,6 +417,11 @@ canvas {
 #hScroll > div img {
 	width: 100%;
 	height: auto;
+	transition: transform 1s;
+}
+
+#hScroll > div img:hover {
+	transform: rotate3D(6, 10, 4, 30deg);
 }
 
 #hScroll > div > a {
@@ -425,7 +430,8 @@ canvas {
 }
 
 #hScroll > div > a:hover {
-	transform: rotate3D(6, 10, 4, 30deg);
+/*	transform: rotate3D(6, 10, 4, 30deg);*/
+	transform: scale(1.2);
 }
 
 #vScroll {
