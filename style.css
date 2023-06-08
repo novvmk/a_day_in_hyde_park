@@ -403,15 +403,15 @@ canvas {
 }
 
 #hScroll > div.onscroll1 {
-	transform: translateX(-8vw);
+	transform: translateX(-8.64rem);
 }
 
 #hScroll > div.onscroll2 {
-	transform: translateX(-5vw);
+	transform: translateX(-5.4rem);
 }
 
 #hScroll > div.onscroll3 {
-	transform: translateX(-2vw);
+	transform: translateX(-2.16rem);
 }
 
 #hScroll > div img {
