@@ -438,224 +438,225 @@ canvas {
 #containerAnne #hScroll > div.story01 {
 	width: 39.15rem;
 	top: 0;
-	left: -5.2vw;
+	left: -5.616rem;
 }
 
 #containerAnne #hScroll > div.story02 {
 	width: 21.6rem;
-	top: 27vh;
-	left: 6vw;
+	top: 16.335rem;
+	left: 6.48rem;
 }
 
 #containerAnne #hScroll > div.story03 {
 	width: 22.8375rem;
-	top: 5vh;
-	left: 35vw;
+	top: 3.025rem;
+	left: 37.8rem;
 }
 
 #containerAnne #hScroll > div.story04 {
 	width: 18.225rem;
-	top: 24vh;
-	left: 58vw;
+	top: 14.52rem;
+	left: 62.64rem;
 }
 
 #containerAnne #hScroll > div.story05 {
 	width: 34.0875rem;
-	top: 19vh;
-	left: 74vw;
+	top: 11.495rem;
+	left: 79.92rem;
 }
 
 #containerAnne #hScroll > div.story06 {
 	width: 26.55rem;
-	top: 0vh;
-	left: 87vw;
+	top: 0rem;
+	left: 93.96rem;
 }
 
 #containerAnne #hScroll > div.story07 {
 	width: 24.6375rem;
-	top: 3vh;
-	left: 120vw;
+	top: 1.815rem;
+	left: 129.6rem;
 }
 
 #containerAnne #hScroll > div.story08 {
 	width: 29.025rem;
-	top: 32vh;
-	left: 125vw;
+	top: 19.36rem;
+	left: 135rem;
 }
 
 #containerAnne #hScroll > div.story09 {
 	width: 37.9125rem;
-	top: 5vh;
-	left: 155vw;
+	top: 3.025rem;
+	left: 167.4rem;
 }
 
 #containerAnne #hScroll > div.story10 {
 	width: 23rem;
-	top: 34vh;
-	left: 170vw;
+	top: 20.57rem;
+	left: 183.6rem;
 }
 
 #containerAnne #hScroll > div.story11 {
 	width: 29.8125rem;
-	top: 5vh;
-	left: 190vw;
+	top: 3.025rem;
+	left: 205.2rem;
 }
 
 #containerAnne #hScroll > div.story12 {
 	width: 28.6875rem;
-	top: 9vh;
-	left: 218vw;
+	top: 5.445rem;
+	left: 235.44rem;
 }
+
 
 /* ---------- Rosie's story ----------	*/
 
 #containerRosie #hScroll > div.story01 {
 	width: 26.4375rem;
-	top: 24vh;
-	left: -3vw;
+	top: 24rem;
+	left: -3rem;
 	z-index: 30;
 }
 
 #containerRosie #hScroll > div.story02 {
 	width: 23.5125rem;
-	top: 2vh;
-	left: 12vw;
+	top: 2rem;
+	left: 12rem;
 }
 
 #containerRosie #hScroll > div.story03 {
 	width: 28.6875rem;
-	top: 11vh;
-	left: 40vw;
+	top: 11rem;
+	left: 40rem;
 }
 
 #containerRosie #hScroll > div.story04 {
 	width: 31.1625rem;
-	top: 26vh;
-	left: 62vw;
+	top: 26rem;
+	left: 62rem;
 }
 
 #containerRosie #hScroll > div.story05 {
 	width: 29.5875rem;
-	top: 1vh;
-	left: 76vw;
+	top: 1rem;
+	left: 76rem;
 }
 
 #containerRosie #hScroll > div.story06 {
 	width: 21.825rem;
-	top: 26vh;
-	left: 103vw;
+	top: 26rem;
+	left: 103rem;
 }
 
 #containerRosie #hScroll > div.story07 {
 	width: 30.2625rem;
-	top: 6vh;
-	left: 122vw;
+	top: 6rem;
+	left: 122rem;
 }
 
 #containerRosie #hScroll > div.story08 {
 	width: 30.4875rem;
-	top: 19vh;
-	left: 150vw;
+	top: 19rem;
+	left: 150rem;
 }
 
 #containerRosie #hScroll > div.story09 {
 	width: 27.45rem;
-	top: 8.5vh;
-	left: 164vw;
+	top: 8.5rem;
+	left: 164rem;
 }
 
 #containerRosie #hScroll > div.story10 {
 	width: 20.475rem;
-	top: 20vh;
-	left: 192vw;
+	top: 20rem;
+	left: 192rem;
 }
 
 #containerRosie #hScroll > div.story11 {
 	width: 28.8rem;
-	top: 4vh;
-	left: 211vw;
+	top: 4rem;
+	left: 211rem;
 	z-index: 30;
 }
 
 #containerRosie #hScroll > div.story12 {
 	width: 26rem;
-	top: 12vh;
-	left: 223vw;
+	top: 12rem;
+	left: 223rem;
 }
 
 /* ---------- Ron's story ----------	*/
 
 #containerRon #hScroll > div.story01 {
 	width: 21.825rem;
-	top: 2vh;
-	left: -2.8vw;
+	top: 2rem;
+	left: -2.8rem;
 }
 
 #containerRon #hScroll > div.story02 {
 	width: 39.375rem;
-	top: 30vh;
-	left: 7vw;
+	top: 30rem;
+	left: 7rem;
 }
 
 #containerRon #hScroll > div.story03 {
 	width: 30.2625rem;
-	top: 2vh;
-	left: 39vw;
+	top: 2rem;
+	left: 39rem;
 }
 
 #containerRon #hScroll > div.story04 {
 	width: 29.5875rem;
-	top: 18vh;
-	left: 56vw;
+	top: 18rem;
+	left: 56rem;
 }
 
 #containerRon #hScroll > div.story05 {
 	width: 23.9625rem;
-	top: 2.5vh;
-	left: 88vw;
+	top: 2.5rem;
+	left: 88rem;
 }
 
 #containerRon #hScroll > div.story06 {
 	width: 26.6625rem;
-	top: 30vh;
-	left: 103vw;
+	top: 30rem;
+	left: 103rem;
 }
 
 #containerRon #hScroll > div.story07 {
 	width: 28.6875rem;
-	top: 20vh;
-	left: 123vw;
+	top: 20rem;
+	left: 123rem;
 }
 
 #containerRon #hScroll > div.story08 {
 	width: 26.6625rem;
 	top: 0;
-	left: 138vw;
+	left: 138rem;
 }
 
 #containerRon #hScroll > div.story09 {
 	width: 38rem;
-	top: 24vh;
-	left: 153.5vw;
+	top: 24rem;
+	left: 153.5rem;
 	z-index: 30;
 }
 
 #containerRon #hScroll > div.story10 {
 	width: 25.9875rem;
-	top: 7vh;
-	left: 180vw;
+	top: 7rem;
+	left: 180rem;
 }
 
 #containerRon #hScroll > div.story11 {
 	width: 21.7125rem;
-	top: 0vh;
-	left: 205vw;
+	top: 0rem;
+	left: 205rem;
 }
 
 #containerRon #hScroll > div.story12 {
 	width: 35.8875rem;
-	top: 26vh;
-	left: 218vw;
+	top: 26rem;
+	left: 218rem;
 }
 
 
@@ -663,74 +664,74 @@ canvas {
 
 #containerPaul #hScroll > div.story01 {
 	width: 37rem;
-	top: 5vh;
-	left: -7vw;
+	top: 5rem;
+	left: -7rem;
 }
 
 #containerPaul #hScroll > div.story02 {
 	width: 29rem;
-	top: 37vh;
-	left: 18vw;
+	top: 37rem;
+	left: 18rem;
 }
 
 #containerPaul #hScroll > div.story03 {
 	width: 26.4375rem;
-	top: 9vh;
-	left: 40vw;
+	top: 9rem;
+	left: 40rem;
 }
 
 #containerPaul #hScroll > div.story04 {
 	width: 30.6rem;
-	top: -4vh;
-	left: 76vw;
+	top: -4rem;
+	left: 76rem;
 }
 
 #containerPaul #hScroll > div.story05 {
 	width: 27.3375rem;
-	top: 11vh;
-	left: 85vw;
+	top: 11rem;
+	left: 85rem;
 }
 
 #containerPaul #hScroll > div.story06 {
 	width: 28.6875rem;
-	top: 1vh;
-	left: 102vw;
+	top: 1rem;
+	left: 102rem;
 }
 
 #containerPaul #hScroll > div.story07 {
 	width: 32rem;
-	top: 27vh;
-	left: 123vw;
+	top: 27rem;
+	left: 123rem;
 }
 
 #containerPaul #hScroll > div.story08 {
 	width: 35.55rem;
-	top: -2vh;
-	left: 154vw;
+	top: -2rem;
+	left: 154rem;
 }
 
 #containerPaul #hScroll > div.story09 {
 	width: 27.5625rem;
-	top: 5vh;
-	left: 172vw;
+	top: 5rem;
+	left: 172rem;
 }
 
 #containerPaul #hScroll > div.story10 {
 	width: 34.0875rem;
-	top: 33vh;
-	left: 168vw;
+	top: 33rem;
+	left: 168rem;
 }
 
 #containerPaul #hScroll > div.story11 {
 	width: 30.7125rem;
-	top: 27vh;
-	left: 203vw;
+	top: 27rem;
+	left: 203rem;
 }
 
 #containerPaul #hScroll > div.story12 {
 	width: 29.475rem;
-	top: 5vh;
-	left: 222vw;
+	top: 5rem;
+	left: 222rem;
 }
 
 /* ---------- pages ----------	*/
@@ -909,7 +910,7 @@ footer h3 {
 /* ---------- media query ---------- */
 
 @media screen and (max-width:428px) and (orientation:portrait) {
-	html {font-size:8px}
+	html {font-size:10px}
 }
 
 @media only screen and (min-width: 429px) and (max-width: 700px) {
