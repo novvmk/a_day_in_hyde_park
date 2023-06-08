@@ -958,6 +958,8 @@ footer h3 {
 
 @media only screen and (min-width: 1730px) {
   html {font-size:18px}
+  #hScroll {width:190rem}
+  #vScroll {height:190rem}
 }
 
 
