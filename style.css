@@ -387,7 +387,7 @@ canvas {
   position: fixed;
   top: 25vh;
   left: 0;
-  width: 3400px;
+  width: 212.5rem;
   height: 70vh
 }
 
@@ -429,7 +429,7 @@ canvas {
 }
 
 #vScroll {
-  height: 3400px;
+  height: 212.5rem;
 }
 
 
@@ -663,74 +663,74 @@ canvas {
 
 #containerPaul #hScroll > div.story01 {
 	width: 37rem;
-	top: 5rem;
-	left: -7rem;
+	top: 3.025rem;
+	left: -7.56rem;
 }
 
 #containerPaul #hScroll > div.story02 {
 	width: 29rem;
-	top: 37rem;
-	left: 18rem;
+	top: 22.385rem;
+	left: 19.44rem;
 }
 
 #containerPaul #hScroll > div.story03 {
 	width: 26.4375rem;
-	top: 9rem;
-	left: 40rem;
+	top: 5.445rem;
+	left: 43.2rem;
 }
 
 #containerPaul #hScroll > div.story04 {
 	width: 30.6rem;
-	top: -4rem;
-	left: 76rem;
+	top: -2.42rem;
+	left: 82.08rem;
 }
 
 #containerPaul #hScroll > div.story05 {
 	width: 27.3375rem;
-	top: 11rem;
-	left: 85rem;
+	top: 6.655rem;
+	left: 91.8rem;
 }
 
 #containerPaul #hScroll > div.story06 {
 	width: 28.6875rem;
-	top: 1rem;
-	left: 102rem;
+	top: 0.605rem;
+	left: 110.16rem;
 }
 
 #containerPaul #hScroll > div.story07 {
 	width: 32rem;
-	top: 27rem;
-	left: 123rem;
+	top: 16.335rem;
+	left: 132.84rem;
 }
 
 #containerPaul #hScroll > div.story08 {
 	width: 35.55rem;
-	top: -2rem;
-	left: 154rem;
+	top: -1.21rem;
+	left: 166.32rem;
 }
 
 #containerPaul #hScroll > div.story09 {
 	width: 27.5625rem;
-	top: 5rem;
-	left: 172rem;
+	top: 3.025rem;
+	left: 185.76rem;
 }
 
 #containerPaul #hScroll > div.story10 {
 	width: 34.0875rem;
-	top: 33rem;
-	left: 168rem;
+	top: 19.965rem;
+	left: 181.44rem;
 }
 
 #containerPaul #hScroll > div.story11 {
 	width: 30.7125rem;
-	top: 27rem;
-	left: 203rem;
+	top: 16.335rem;
+	left: 219.24rem;
 }
 
 #containerPaul #hScroll > div.story12 {
 	width: 29.475rem;
-	top: 5rem;
-	left: 222rem;
+	top: 3.025rem;
+	left: 239.76rem;
 }
 
 /* ---------- pages ----------	*/
@@ -909,7 +909,7 @@ footer h3 {
 /* ---------- media query ---------- */
 
 @media screen and (max-width:428px) and (orientation:portrait) {
-	html {font-size:10px}
+	html {font-size:9px}
 }
 
 @media only screen and (min-width: 429px) and (max-width: 700px) {
