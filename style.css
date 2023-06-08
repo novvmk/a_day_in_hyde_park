@@ -233,7 +233,8 @@ canvas {
 }
 
 .container_img > div.img2 {
-	top: 26.62rem;
+	top: 44vh;
+/*	top: 26.62rem;*/
 	left: 5.4rem;
 	width: 23.75rem;
 	height: auto;
@@ -241,7 +242,8 @@ canvas {
 }
 
 .container_img > div.img3 {
-	top: 11.495rem;
+	top: 19vh;
+/*	top: 11.495rem;*/
 	left: 24.3rem;
 	width: 29.375rem;
 	height: auto;
@@ -249,7 +251,8 @@ canvas {
 }
 
 .container_img > div.img4 {
-	top: 9.075rem;
+	top: 15vh;
+/*	top: 9.075rem;*/
 	left: 54.54rem;
 	width: 19rem;
 	height: auto;
@@ -257,7 +260,8 @@ canvas {
 }
 
 .container_img > div.img5 {
-	top: 24.805rem;
+	top: 41vh;
+/*	top: 24.805rem;*/
 	left: 79.38rem;
 	width: 23.5rem;
 	height: auto;
@@ -265,7 +269,8 @@ canvas {
 }
 
 .container_img > div.img6 {
-	top: 38.115rem;
+	top: 63vh;
+/*	top: 38.115rem;*/
 	left: 60.48rem;
 	width: 20rem;
 	height: auto;
@@ -273,7 +278,8 @@ canvas {
 }
 
 .container_img > div.img7 {
-	top: 36.6025rem;
+	top: 60.5vh;
+/*	top: 36.6025rem;*/
 	left: 22.14rem;
 	width: 25rem;
 	height: auto;
@@ -281,7 +287,8 @@ canvas {
 }
 
 .container_img > div.img8 {
-	top: 23.474rem;
+	top: 38.8vh;
+/*	top: 23.474rem;*/
 	left: 44.28rem;
 	width: 23rem;
 	height: auto;
@@ -289,7 +296,8 @@ canvas {
 }
 
 .container_img > div.img9 {
-	top: 16.0325rem;
+	top: 26.5vh;
+/*	top: 16.0325rem;*/
 	left: 59.4rem;
 	width: 28rem;
 	height: auto;
@@ -960,6 +968,7 @@ footer h3 {
   html {font-size:18px}
   #hScroll {width:191rem}
   #vScroll {height:191rem}
+  #containerIndex h2 {top: 41vh}
 }
 
 
