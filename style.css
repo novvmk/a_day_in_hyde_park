@@ -233,64 +233,64 @@ canvas {
 }
 
 .container_img > div.img2 {
-	top: 44vh;
-	left: 5vw;
+	top: 26.62rem;
+	left: 5.4rem;
 	width: 23.75rem;
 	height: auto;
 	animation-delay: 4.2s;
 }
 
 .container_img > div.img3 {
-	top: 19vh;
-	left: 22.5vw;
+	top: 11.495rem;
+	left: 24.3rem;
 	width: 29.375rem;
 	height: auto;
 	animation-delay: 5s;
 }
 
 .container_img > div.img4 {
-	top: 15vh;
-	left: 50.5vw;
+	top: 9.075rem;
+	left: 54.54rem;
 	width: 19rem;
 	height: auto;
 	animation-delay: 4.4s;
 }
 
 .container_img > div.img5 {
-	top: 41vh;
-	left: 73.5vw;
+	top: 24.805rem;
+	left: 79.38rem;
 	width: 23.5rem;
 	height: auto;
 	animation-delay: 4.7s;
 }
 
 .container_img > div.img6 {
-	top: 63vh;
-	left: 56vw;
+	top: 38.115rem;
+	left: 60.48rem;
 	width: 20rem;
 	height: auto;
 	animation-delay: 5s;
 }
 
 .container_img > div.img7 {
-	top: 60.5vh;
-	left: 20.5vw;
+	top: 36.6025rem;
+	left: 22.14rem;
 	width: 25rem;
 	height: auto;
 	animation-delay: 4s;
 }
 
 .container_img > div.img8 {
-	top: 38.8vh;
-	left: 41vw;
+	top: 23.474rem;
+	left: 44.28rem;
 	width: 23rem;
 	height: auto;
 	animation-delay: 4.3s;
 }
 
 .container_img > div.img9 {
-	top: 26.5vh;
-	left: 55vw;
+	top: 16.0325rem;
+	left: 59.4rem;
 	width: 28rem;
 	height: auto;
 	animation-delay: 4.6s;
@@ -512,76 +512,76 @@ canvas {
 
 #containerRosie #hScroll > div.story01 {
 	width: 26.4375rem;
-	top: 24rem;
-	left: -3rem;
+	top: 14.52rem;
+	left: -3.24rem;
 	z-index: 30;
 }
 
 #containerRosie #hScroll > div.story02 {
 	width: 23.5125rem;
-	top: 2rem;
-	left: 12rem;
+	top: 1.21rem;
+	left: 12.96rem;
 }
 
 #containerRosie #hScroll > div.story03 {
 	width: 28.6875rem;
-	top: 11rem;
-	left: 40rem;
+	top: 6.655rem;
+	left: 43.2rem;
 }
 
 #containerRosie #hScroll > div.story04 {
 	width: 31.1625rem;
-	top: 26rem;
-	left: 62rem;
+	top: 15.73rem;
+	left: 66.96rem;
 }
 
 #containerRosie #hScroll > div.story05 {
 	width: 29.5875rem;
-	top: 1rem;
-	left: 76rem;
+	top: 0.605rem;
+	left: 82.08rem;
 }
 
 #containerRosie #hScroll > div.story06 {
 	width: 21.825rem;
-	top: 26rem;
-	left: 103rem;
+	top: 15.73rem;
+	left: 111.24rem;
 }
 
 #containerRosie #hScroll > div.story07 {
 	width: 30.2625rem;
-	top: 6rem;
-	left: 122rem;
+	top: 3.63rem;
+	left: 131.76rem;
 }
 
 #containerRosie #hScroll > div.story08 {
 	width: 30.4875rem;
-	top: 19rem;
-	left: 150rem;
+	top: 11.495rem;
+	left: 162rem;
 }
 
 #containerRosie #hScroll > div.story09 {
 	width: 27.45rem;
-	top: 8.5rem;
-	left: 164rem;
+	top: 5.1425rem;
+	left: 177.12rem;
 }
 
 #containerRosie #hScroll > div.story10 {
 	width: 20.475rem;
-	top: 20rem;
-	left: 192rem;
+	top: 12.1rem;
+	left: 207.36rem;
 }
 
 #containerRosie #hScroll > div.story11 {
 	width: 28.8rem;
-	top: 4rem;
-	left: 211rem;
+	top: 2.42rem;
+	left: 227.88rem;
 	z-index: 30;
 }
 
 #containerRosie #hScroll > div.story12 {
 	width: 26rem;
-	top: 12rem;
-	left: 223rem;
+	top: 7.26rem;
+	left: 240.84rem;
 }
 
 /* ---------- Ron's story ----------	*/
@@ -959,8 +959,6 @@ footer h3 {
 
 @media only screen and (min-width: 1730px) {
   html {font-size:18px}
-  #hScroll {width:4100px}
-  #vScroll {height:4100px}
 }
 
 
