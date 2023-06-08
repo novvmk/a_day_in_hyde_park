@@ -915,8 +915,8 @@ footer h3 {
 
 @media screen and (max-width:428px) and (orientation:portrait) {
 	html {font-size:9px}
-	#hScroll {width:304rem}
-  #vScroll {height:304rem}
+	#hScroll {width:288rem}
+  #vScroll {height:288rem}
 }
 
 @media only screen and (min-width: 429px) and (max-width: 700px) {
