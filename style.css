@@ -115,7 +115,7 @@ canvas {
 
 .main_container {
 	position: relative;
-	width: 100%;
+	width: 100vw;
 	text-align: center;
 	z-index: 100;
 }
@@ -915,8 +915,20 @@ footer h3 {
 
 @media screen and (max-width:428px) and (orientation:portrait) {
 	html {font-size:9px}
-	#hScroll {width:288rem}
-  #vScroll {height:288rem}
+	#containerIndex.main_container {overflow-x:hidden;}
+	#containerIndex h2 {top:36vh;line-height:1.1}
+	#containerIndex h2 span {display:block;width:3rem}
+	.container_img > div.img2 {top:17vh;left:-4vw;width:20rem;}
+	.container_img > div.img3 {top:24vh;left:55vw;}
+	.container_img > div.img4 {top:34vh;left:16vw;width:24rem;}
+	.container_img > div.img5 {top:38.5vh;left:-29vw;}
+	.container_img > div.img6 {top:70vh;left:5vw;}
+	.container_img > div.img7 {top:70vh;left:66.5vw;}
+	.container_img > div.img8 {top:49vh;left:92vw;}
+	.container_img > div.img9 {top:38vh;left:25vw;}
+	#hScroll {width:286rem}
+  #vScroll {height:286rem}
+  #pageP {padding-top:26vh}
 }
 
 @media only screen and (min-width: 429px) and (max-width: 700px) {
