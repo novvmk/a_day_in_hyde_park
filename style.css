@@ -916,16 +916,16 @@ footer h3 {
 @media screen and (max-width:428px) and (orientation:portrait) {
 	html {font-size:9px}
 	#containerIndex.main_container {overflow-x:hidden;}
-	#containerIndex h2 {top:36vh;line-height:1.1}
+	#containerIndex h2 {top:35vh;line-height:1.1}
 	#containerIndex h2 span {display:block;width:3rem}
-	.container_img > div.img2 {top:17vh;left:-4vw;width:20rem;}
-	.container_img > div.img3 {top:24vh;left:55vw;}
-	.container_img > div.img4 {top:34vh;left:16vw;width:24rem;}
-	.container_img > div.img5 {top:38.5vh;left:-29vw;}
-	.container_img > div.img6 {top:70vh;left:5vw;}
-	.container_img > div.img7 {top:70vh;left:66.5vw;}
-	.container_img > div.img8 {top:49vh;left:92vw;}
-	.container_img > div.img9 {top:38vh;left:25vw;}
+	.container_img > div.img2 {top:45vh;left:-16vw;width:19rem;}
+	.container_img > div.img3 {top:30vh;left:13.5vw;width:23.5rem;}
+	.container_img > div.img4 {top:19.5vh;left:68.5vw;width:15.2rem;}
+	.container_img > div.img5 {top:42vh;left:59.5vw;width:18.8rem;}
+	.container_img > div.img6 {top:59vh;left:63vw;width:16rem;}
+	.container_img > div.img7 {top:64.5vh;left:5.5vw;width:20rem;}
+	.container_img > div.img8 {top:48vh;left:21vw;width:18.4rem;}
+	.container_img > div.img9 {top:34vh;left:40vw;width:22.4rem;}
 	#hScroll {width:286rem}
   #vScroll {height:286rem}
   #pageP {padding-top:26vh}
