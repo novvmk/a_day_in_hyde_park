@@ -916,10 +916,10 @@ footer h3 {
 @media screen and (max-width:428px) and (orientation:portrait) {
 	html {font-size:9px}
 	#containerIndex.main_container {overflow-x:hidden;}
-	#containerIndex h2 {top:30.5vh;line-height:1.1}
+	#containerIndex h2 {top:30.6vh;line-height:1.1}
 	#containerIndex h2 span {display:block;width:3rem}
 	.container_img > div.img2 {top:40vh;left:-16vw;width:19rem;}
-	.container_img > div.img3 {top:25vh;left:13.5vw;width:23.5rem;}
+	.container_img > div.img3 {top:25.2vh;left:13.5vw;width:23.5rem;}
 	.container_img > div.img4 {top:14.5vh;left:68.5vw;width:15.2rem;}
 	.container_img > div.img5 {top:37vh;left:59.5vw;width:18.8rem;}
 	.container_img > div.img6 {top:54vh;left:63vw;width:16rem;}
