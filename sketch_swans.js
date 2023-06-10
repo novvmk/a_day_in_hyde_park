@@ -41,7 +41,7 @@ function newSwan(x, y, speed) {
 newSwan.prototype = {
   constructor: newSwan,
   display: function() {
-    image(swan, this.xPos, this.yPos, 480, 339);
+    image(swan, this.xPos, this.yPos, 460, 289);
   },
   
   move: function() {
