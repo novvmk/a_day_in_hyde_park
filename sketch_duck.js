@@ -9,8 +9,8 @@ let rad2 = 136;
 let xpos;
 let ypos;
 
-let xspeed = 7;
-let yspeed = 14;
+let xspeed = 8;
+let yspeed = 12;
 
 let xdirection = 1;
 let ydirection = 1;
