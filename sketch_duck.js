@@ -1,7 +1,7 @@
 let duck;
 
 function preload() {
-  duck = loadImage('img_duck.png');
+  duck = loadImage('images/img_duck.png');
 }
 
 let rad1 = 200;
