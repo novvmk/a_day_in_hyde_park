@@ -11,6 +11,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function (){
+        var $main = $('.main_container');
+        var $story_link = $('#hScroll > div > a');
+        
+        $main.append('<div class="cursor">&#33;</div>');
+      
+        $story_link.mousemove(function(e) {
+            $('.cursor')
+              .eq(0)
+              .css({
+                "display": "block",
+                left: e.pageX + 20,
+                top: e.pageY - 60,
+              });
+            setTimeout(function() {
+              $('.cursor')
+                .eq(1)
+                .css({
+                  "display": "block",
+                  left: e.pageX + 20,
+                  top: e.pageY - 60,
+                });
+            }, 120);
+          });
+
+        $story_link.mouseleave(function(e) {
+            $('.cursor').css("display", "none");
+          });
+
+      });
+    </script>
   </head>
 
   <body>

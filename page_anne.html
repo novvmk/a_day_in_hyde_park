@@ -11,6 +11,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function (){
+        var $main = $('.main_container');
+        var $story_link = $('#hScroll > div > a');
+        
+        $main.append('<div class="cursor">&#33;</div>');
+      
+        $story_link.mousemove(function(e) {
+            $('.cursor')
+              .eq(0)
+              .css({
+                "display": "block",
+                left: e.pageX + 20,
+                top: e.pageY - 60,
+              });
+            setTimeout(function() {
+              $('.cursor')
+                .eq(1)
+                .css({
+                  "display": "block",
+                  left: e.pageX + 20,
+                  top: e.pageY - 60,
+                });
+            }, 120);
+          });
+
+        $story_link.mouseleave(function(e) {
+            $('.cursor').css("display", "none");
+          });
+
+      });
+    </script>
   </head>
 
   <body>
@@ -32,16 +64,16 @@
         <div id="hScroll">
           <div class="story01" onmouseenter="playAudio()"><img src="images/story_anne01.png" alt=""></div>
           <div class="story02" onmouseenter="playAudio()"><a href="page_anne1.html"><img src="images/story_anne02.png" alt=""></a></div>
-          <div class="story03" onmouseenter="playAudio()"><a href="page_anne3.html"><img src="images/story_anne03.png" alt=""></a></div>
+          <div class="story03" onmouseenter="playAudio()"><img src="images/story_anne03.png" alt=""></div>
           <div class="story04" onmouseenter="playAudio()"><a href="page_anne7.html"><img src="images/story_anne04.png" alt=""></a></div>
           <div class="story05" onmouseenter="playAudio()"><img src="images/story_anne05.png" alt=""></div>
-          <div class="story06" onmouseenter="playAudio()"><a href="page_anne4.html"><img src="images/story_anne06.png" alt=""></a></div>
-          <div class="story07" onmouseenter="playAudio()"><img src="images/story_anne07.png" alt=""></div>
-          <div class="story08" onmouseenter="playAudio()"><img src="images/story_anne08.png" alt=""></div>
-          <div class="story09" onmouseenter="playAudio()"><a href="page_anne2.html"><img src="images/story_anne09.png" alt=""></a></div>
-          <div class="story10" onmouseenter="playAudio()"><a href="page_anne8.html"><img src="images/story_anne10.png" alt=""></a></div>
-          <div class="story11" onmouseenter="playAudio()"><a href="page_anne6.html"><img src="images/story_anne11.png" alt=""></a></div>
-          <div class="story12" onmouseenter="playAudio()"><a href="page_anne5.html"><img src="images/story_anne12.png" alt=""></a></div>
+          <div class="story06" onmouseenter="playAudio()"><img src="images/story_anne06.png" alt=""></div>
+          <div class="story07" onmouseenter="playAudio()"><a href="page_anne3.html"><img src="images/story_anne07.png" alt=""></a></div>
+          <div class="story08" onmouseenter="playAudio()"><a href="page_anne4.html"><img src="images/story_anne08.png" alt=""></a></div>
+          <div class="story09" onmouseenter="playAudio()"><img src="images/story_anne09.png" alt=""></div>
+          <div class="story10" onmouseenter="playAudio()"><img src="images/story_anne10.png" alt=""></div>
+          <div class="story11" onmouseenter="playAudio()"><img src="images/story_anne11.png" alt=""></div>
+          <div class="story12" onmouseenter="playAudio()"><img src="images/story_anne12.png" alt=""></div>
         </div>
         <div id="vScroll">
       </div>

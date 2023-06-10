@@ -11,6 +11,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function (){
+        var $main = $('.main_container');
+        var $story_link = $('#hScroll > div > a');
+        
+        $main.append('<div class="cursor">&#33;</div>');
+      
+        $story_link.mousemove(function(e) {
+            $('.cursor')
+              .eq(0)
+              .css({
+                "display": "block",
+                left: e.pageX + 20,
+                top: e.pageY - 60,
+              });
+            setTimeout(function() {
+              $('.cursor')
+                .eq(1)
+                .css({
+                  "display": "block",
+                  left: e.pageX + 20,
+                  top: e.pageY - 60,
+                });
+            }, 120);
+          });
+
+        $story_link.mouseleave(function(e) {
+            $('.cursor').css("display", "none");
+          });
+
+      });
+    </script>
   </head>
 
   <body>
@@ -33,8 +65,8 @@
           <div class="story01" onmouseenter="playAudio()"><img src="images/story_paul01.png" alt=""></div>
           <div class="story02" onmouseenter="playAudio()"><a href="page_paul1.html"><img src="images/story_paul02.png" alt=""></a></div>
           <div class="story03" onmouseenter="playAudio()"><img src="images/story_paul03.png" alt=""></div>
-          <div class="story04" onmouseenter="playAudio()"><a href="page_paul2.html"><img src="images/story_paul04.png" alt=""></div>
-          <div class="story05" onmouseenter="playAudio()"><img src="images/story_paul05.png" alt=""></a></div>
+          <div class="story04" onmouseenter="playAudio()"><a href="page_paul2.html"><img src="images/story_paul04.png" alt=""></a></div>
+          <div class="story05" onmouseenter="playAudio()"><img src="images/story_paul05.png" alt=""></div>
           <div class="story06" onmouseenter="playAudio()"><img src="images/story_paul06.png" alt=""></div>
           <div class="story07" onmouseenter="playAudio()"><img src="images/story_paul07.png" alt=""></div>
           <div class="story08" onmouseenter="playAudio()"><img src="images/story_paul08.png" alt=""></div>
