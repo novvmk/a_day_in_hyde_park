@@ -2,7 +2,7 @@ let swan;
 let swans = [];
 
 function preload() {
-  swan = loadImage('images/img_swan.png');
+  swan = loadImage('images/img_swans.png');
 }
 
 function setup() {
