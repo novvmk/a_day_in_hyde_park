@@ -27,10 +27,10 @@ function draw() {
   xpos = xpos + xspeed * xdirection;
   ypos = ypos + yspeed * ydirection;
 
-  if (xpos > width - rad1 || xpos < rad1) {
+  if (xpos > windowWidth - rad1 || xpos + rad1 < rad1) {
     xdirection *= -1;
   }
-  if (ypos > height - rad2 || ypos < rad2) {
+  if (ypos > windowHeight - rad2 || ypos + rad2 < rad2) {
     ydirection *= -1;
   }
 
