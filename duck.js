@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 200) {
+    if ($(document).scrollTop() > 540) {
       var st = $(document).scrollTop();
       console.log(st);
       $("canvas").css("display", "block");
