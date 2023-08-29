@@ -427,6 +427,11 @@ canvas {
 #hScroll > div img {
 	width: 100%;
 	height: auto;
+	transition: transform 1s;
+}
+
+#hScroll > div img:hover {
+	transform: rotate3D(6, 10, 4, 30deg);	
 }
 
 #hScroll > div > a {
@@ -435,7 +440,7 @@ canvas {
 }
 
 #hScroll > div > a:hover {
-	transform: rotate3D(6, 10, 4, 30deg);
+/*	transform: rotate3D(6, 10, 4, 30deg);*/
 }
 
 #vScroll {
